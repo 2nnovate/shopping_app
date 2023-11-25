@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shopping_app/bloc/cart.dart';
 import 'package:shopping_app/fakeAPI/productService.dart';
 import 'package:shopping_app/types/Product.dart';
 import 'package:shopping_app/widgets/CartIcon.dart';
@@ -75,15 +76,8 @@ class _MyHomePageState extends State<MyHomePage> {
     print(products);
   }
 
-  void _incrementCounter() {
-    setState(() {
-      // This call to setState tells the Flutter framework that something has
-      // changed in this State, which causes it to rerun the build method below
-      // so that the display can reflect the updated values. If we changed
-      // _counter without calling setState(), then the build method would not be
-      // called again, and so nothing would appear to happen.
-      _counter++;
-    });
+  void _addCartItem() {
+    cartBloc.add(Product('test', 1), 1);
   }
 
   @override
@@ -135,7 +129,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
+        onPressed: _addCartItem,
         tooltip: 'Increment',
         child: const Icon(Icons.add),
       ), // This trailing comma makes auto-formatting nicer for build methods.

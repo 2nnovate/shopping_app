@@ -14,17 +14,14 @@ class CartBloc {
   int get cartListCount => cartList.length;
   
   CartBloc() {
-    print('$cartListCount');
-  }
-
-  subscribe() {
     _cartConroller.stream.listen((cartItem) {
       // TODO: add cart item in cart list
       cartList.add(cartItem);
+      print(cartListCount);
     });
   }
 
-  add(Product product, int quentity) {
+  void add(Product product, int quentity) {
     _cartConroller.sink.add(CartItem(product, quentity));
   }
 }
