@@ -70,6 +70,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void getAllProducts() async {
     List<Product> products = await this.productService.getAll();
+    // JSON 직렬화/비직렬화로 파싱해야 콘솔에서 제대로 확인할 수 있음
     print(products);
   }
 
