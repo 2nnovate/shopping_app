@@ -77,6 +77,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   void _addCartItem() {
+    print('add cart item');
     cartBloc.add(Product('test', 1), 1);
   }
 
