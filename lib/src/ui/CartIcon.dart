@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shopping_app/bloc/cart.dart';
+import 'package:shopping_app/src/blocs/cart.dart';
 
 class CartIcon extends StatelessWidget {
   @override

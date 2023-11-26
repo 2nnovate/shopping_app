@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:shopping_app/bloc/cart.dart';
-import 'package:shopping_app/fakeAPI/productService.dart';
-import 'package:shopping_app/types/Product.dart';
-import 'package:shopping_app/widgets/CartIcon.dart';
+import 'package:shopping_app/src/blocs/cart.dart';
+import 'package:shopping_app/src/models/Product.dart';
+import 'package:shopping_app/src/resources/ProductService.dart';
+import 'package:shopping_app/src/ui/CartIcon.dart';
 
 void main() {
   runApp(const MyApp());

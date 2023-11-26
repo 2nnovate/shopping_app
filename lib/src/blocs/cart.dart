@@ -1,7 +1,7 @@
 import 'dart:async';
 
-import 'package:shopping_app/types/CartItem.dart';
-import 'package:shopping_app/types/Product.dart';
+import 'package:shopping_app/src/models/CartItem.dart';
+import 'package:shopping_app/src/models/Product.dart';
 
 class CartBloc {
   List<CartItem> _cartList = [];
