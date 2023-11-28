@@ -10,7 +10,7 @@ class CartIcon extends StatelessWidget {
       stream: cartBloc.cartListCount,
       builder: (context, snapshot) {
         return Padding(
-          padding: const EdgeInsets.only(right: 8.0),
+          padding: const EdgeInsets.only(right: 12.0),
           child: Badge(
             label: Text('${snapshot.data.toString()}'),
             child: const Icon(Icons.shopping_cart),
